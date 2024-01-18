@@ -1,8 +1,8 @@
 # Understanding-customer-orders-at-Target
 
-#Target – case study using SQL <br>
-#Context <br>
-#Target is one of the world’s most recognized brands and one of America’s leading 
+Target – case study using SQL <br>
+Context <br>
+Target is one of the world’s most recognized brands and one of America’s leading 
 retailers. Target makes itself a preferred shopping destination by offering 
 outstanding value, inspiration, innovation and an exceptional guest experience 
 that no other retailer can deliver.
