@@ -1,6 +1,9 @@
-# Target Brazil Customer Insights Case Study
+# Target Brazil Customer Insights Adventure 🚀
 
-Target – Case Study using SQL <br>
+Uncover the Mysteries of 100,000 Orders in the Brazilian Retail Realm!
+🌐 Welcome to the Target Brazil Customer Insights Case Study! Dive into the enchanting dataset, spanning the years 2016 to 2018, and discover the secrets hidden within 100,000 customer orders at Target in the vibrant landscapes of Brazil.
+
+📊 Embark on a journey through the dimensions of order status, pricing, payment, freight performance, customer locations, product attributes, and the poetic whispers of customer reviews.
 
 Target is one of the world’s most recognized brands and one of America’s leading 
 retailers. Target makes itself a preferred shopping destination by offering 
@@ -10,9 +13,10 @@ This business case has information of 100k orders from 2016 to 2018 made at
 Target in Brazil. Its features allows viewing an order from multiple dimensions: 
 from order status, price, payment and freight performance to customer location, 
 product attributes and finally reviews written by customers.
-**Overview:
 
-This repository contains a comprehensive data analysis and case study focused on understanding customer behavior based on a dataset of 100,000 orders from Target in Brazil spanning from 2016 to 2018. The dataset provides insights into various dimensions of the customer journey, including order status, pricing, payment, freight performance, customer location, product attributes, and customer reviews.**
+Overview:
+
+This repository contains a comprehensive data analysis and case study focused on understanding customer behavior based on a dataset of 100,000 orders from Target in Brazil spanning from 2016 to 2018. The dataset provides insights into various dimensions of the customer journey, including order status, pricing, payment, freight performance, customer location, product attributes, and customer reviews.
 
 SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ;
 
