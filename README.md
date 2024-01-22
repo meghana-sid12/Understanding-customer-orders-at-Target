@@ -18,7 +18,7 @@ __Overview:__
 
 This repository contains a comprehensive data analysis and case study focused on understanding customer behavior based on a dataset of 100,000 orders from Target in Brazil spanning from 2016 to 2018. The dataset provides insights into various dimensions of the customer journey, including order status, pricing, payment, freight performance, customer location, product attributes, and customer reviews.
 
-```sql SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ; 
+```sql SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ; ```
 
 select extract(year from min(order_purchase_timestamp)) as min_year, 
 extract(year from max(order_purchase_timestamp)) as max_year 
@@ -110,7 +110,7 @@ date_diff( order_delivered_customer_date , order_purchase_timestamp, day) as tim
 
   select  extract(month from(order_purchase_timestamp)) as month, count(o.order_id) as no_of_orders, payment_type from Target.orders o join Target.payments p on o.order_id = p.order_id group by month,payment_type order by month;
 
-  select  count(o.order_id) as no_of_orders, payment_installments from Target.orders o join Target.payments p on o.order_id = p.order_id group by payment_installments order by payment_installments; ```
+  ```sql select  count(o.order_id) as no_of_orders, payment_installments from Target.orders o join Target.payments p on o.order_id = p.order_id group by payment_installments order by payment_installments; ```
 
   __Insights:__
 Customer Location Impact:
