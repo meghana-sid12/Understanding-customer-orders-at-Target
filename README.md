@@ -1,4 +1,4 @@
-# Understanding-customer-orders-at-Target
+# Target Brazil Customer Insights Case Study
 
 Target – Case Study using SQL <br>
 
@@ -10,6 +10,9 @@ This business case has information of 100k orders from 2016 to 2018 made at
 Target in Brazil. Its features allows viewing an order from multiple dimensions: 
 from order status, price, payment and freight performance to customer location, 
 product attributes and finally reviews written by customers.
+**Overview:
+
+This repository contains a comprehensive data analysis and case study focused on understanding customer behavior based on a dataset of 100,000 orders from Target in Brazil spanning from 2016 to 2018. The dataset provides insights into various dimensions of the customer journey, including order status, pricing, payment, freight performance, customer location, product attributes, and customer reviews.**
 
 SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ;
 
