@@ -14,11 +14,11 @@ Target in Brazil. Its features allows viewing an order from multiple dimensions:
 from order status, price, payment and freight performance to customer location, 
 product attributes and finally reviews written by customers.
 
-Overview:
+__Overview:__
 
 This repository contains a comprehensive data analysis and case study focused on understanding customer behavior based on a dataset of 100,000 orders from Target in Brazil spanning from 2016 to 2018. The dataset provides insights into various dimensions of the customer journey, including order status, pricing, payment, freight performance, customer location, product attributes, and customer reviews.
 
-```sql SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ; ```
+```sql SELECT distinct customer_city, customer_state FROM `my-project-target-382813.Target.customers` ; 
 
 select extract(year from min(order_purchase_timestamp)) as min_year, 
 extract(year from max(order_purchase_timestamp)) as max_year 
@@ -110,9 +110,9 @@ date_diff( order_delivered_customer_date , order_purchase_timestamp, day) as tim
 
   select  extract(month from(order_purchase_timestamp)) as month, count(o.order_id) as no_of_orders, payment_type from Target.orders o join Target.payments p on o.order_id = p.order_id group by month,payment_type order by month;
 
-  select  count(o.order_id) as no_of_orders, payment_installments from Target.orders o join Target.payments p on o.order_id = p.order_id group by payment_installments order by payment_installments;
+  select  count(o.order_id) as no_of_orders, payment_installments from Target.orders o join Target.payments p on o.order_id = p.order_id group by payment_installments order by payment_installments; ```
 
-  Insights:
+  __Insights:__
 Customer Location Impact:
 
 Insight: Analyze the geographic distribution of customer orders to identify regions with the highest demand.
@@ -138,7 +138,7 @@ Seasonal Trends:
 Insight: Examine order data over different seasons to identify seasonal trends in product demand.
 Implication: Target can plan marketing campaigns, promotions, and inventory stocking strategies based on seasonal fluctuations.
 
-Recommendations:
+__Recommendations:__
 Enhance Regional Targeting:
 
 Recommendation: Implement targeted marketing campaigns and product promotions based on regional preferences identified in customer order data.
