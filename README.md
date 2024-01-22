@@ -104,3 +104,50 @@ date_diff( order_delivered_customer_date , order_purchase_timestamp, day) as tim
   select  extract(month from(order_purchase_timestamp)) as month, count(o.order_id) as no_of_orders, payment_type from Target.orders o join Target.payments p on o.order_id = p.order_id group by month,payment_type order by month;
 
   select  count(o.order_id) as no_of_orders, payment_installments from Target.orders o join Target.payments p on o.order_id = p.order_id group by payment_installments order by payment_installments;
+
+  Insights:
+Customer Location Impact:
+
+Insight: Analyze the geographic distribution of customer orders to identify regions with the highest demand.
+Implication: Target can optimize inventory management and marketing strategies based on regional preferences.
+
+Product Attributes and Customer Reviews:
+
+Insight: Correlate product attributes with customer reviews to understand what features drive positive feedback.
+Implication: Target can focus on promoting and enhancing products with attributes that resonate positively with customers.
+
+Order Status and Performance:
+
+Insight: Evaluate the relationship between order status and overall performance metrics (e.g., customer satisfaction, repeat purchases).
+Implication: Target can streamline order fulfillment processes and enhance customer service for improved overall satisfaction.
+
+Payment and Freight Performance:
+
+Insight: Analyze payment and freight performance to identify trends and potential areas for improvement.
+Implication: Target can optimize payment and shipping options to align with customer preferences and improve overall satisfaction.
+
+Seasonal Trends:
+
+Insight: Examine order data over different seasons to identify seasonal trends in product demand.
+Implication: Target can plan marketing campaigns, promotions, and inventory stocking strategies based on seasonal fluctuations.
+
+Recommendations:
+Enhance Regional Targeting:
+
+Recommendation: Implement targeted marketing campaigns and product promotions based on regional preferences identified in customer order data.
+
+Product Feature Enhancement:
+
+Recommendation: Invest in product development and marketing for items with attributes that consistently receive positive customer reviews.
+
+Streamline Order Fulfillment:
+
+Recommendation: Optimize order fulfillment processes to minimize delays and improve order status, leading to increased customer satisfaction.
+
+Payment and Shipping Optimization:
+
+Recommendation: Evaluate and optimize payment and shipping options to align with customer preferences, offering a seamless and efficient checkout experience.
+
+Strategic Seasonal Planning:
+
+Recommendation: Develop seasonal strategies, including targeted promotions and inventory planning, to capitalize on seasonal trends and maximize sales opportunities.
